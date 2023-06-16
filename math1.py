@@ -1,5 +1,4 @@
 import random
-import math
 import time
 
 
@@ -278,7 +277,7 @@ def gameEnd():
     time.sleep(2)
 
     print("")
-    print("<<Thank you for enjoying the game>>")
+    print("<<Thank you for enjoying the Mental Calculation game>>")
 
 
 gameOption()
