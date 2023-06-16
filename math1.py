@@ -8,6 +8,9 @@ point=0
 numGA=0
 numGS=0
 numGM=0
+storePADD=[]
+storeSub=[]
+storeMul=[]
 
 print("")
 print("---MENTAL CALCULATION GAME---")
@@ -41,6 +44,7 @@ def gameAdd():
     numGA=numGA+1
     point=0
     time.sleep(3)
+    print("")
     print("Let's start the game in 3 seconds")
     time.sleep(1)
     print("Three")
@@ -50,6 +54,7 @@ def gameAdd():
     print("One")
     time.sleep(1)
     print("Game Start")
+    print("")
     time.sleep(1)
     for i in range(10):
         a=random.randint(1,50)
@@ -65,14 +70,16 @@ def gameAdd():
         else:
             point-=7
         print(f"Current Point: {point}")
+        print("")
     print("")
     print("--------------------------")
     print("")
-    print(f"player:{name}, you got {point} points in your {numGA} game")
-    storePADD=[]
-    storePADD.append(f"{numGA}:{point}")
+    print(f"player: {name}, you got {point} points in your {numGA} game")
+    storePADD.append(f"Game: {numGA} -> {point}")
     print("")
     print(f"Addition Game list: {storePADD}")
+    print("")
+    print("--------------------------")
     gameOption()
 
 def gameSub():
@@ -80,6 +87,7 @@ def gameSub():
     numGS=numGS+1
     point=0
     time.sleep(3)
+    print("")
     print("Let's start the game in 3 seconds")
     time.sleep(1)
     print("Three")
@@ -89,6 +97,7 @@ def gameSub():
     print("One")
     time.sleep(1)
     print("Game Start")
+    print("")
     time.sleep(1)
     for i in range(10):
         a=random.randint(1,50)
@@ -104,14 +113,16 @@ def gameSub():
         else:
             point-=7
         print(f"Current Point: {point}")
+        print("")
     print("")
     print("--------------------------")
     print("")
-    print(f"player:{name}, you got {point} points in your {numGS} game")
-    storeSub=[]
-    storeSub.append(f"{numGS}:{point}")
+    print(f"player: {name}, you got {point} points in your {numGS} game")
+    storeSub.append(f"Game: {numGS} -> point : {point}")
     print("")
     print(f"Subtraction Game: {storeSub}")
+    print("")
+    print("--------------------------")
     gameOption()
 
 
@@ -121,6 +132,7 @@ def gameMul():
     numGM=1+numGM
     time.sleep(3)
     print("Let's start the game in 3 seconds")
+    print("")
     time.sleep(1)
     print("Three")
     time.sleep(1)
@@ -129,6 +141,7 @@ def gameMul():
     print("One")
     time.sleep(1)
     print("Game Start")
+    print("")
     time.sleep(1)
     for i in range(10):
         a=random.randint(1,12)
@@ -144,14 +157,16 @@ def gameMul():
         else:
             point-=7
         print(f"Current Point: {point}")
+        print("")
     print("")
     print("--------------------------")
     print("")
-    print(f"player:{name}, you got {point} points in your {numGM} game")
-    storeMul=[]
-    storeMul.append(f"{numGM}:{point}")
+    print(f"player: {name}, you got {point} points in your {numGM} game")
+    storeMul.append(f"Game: {numGM} -> point : {point}")
     print("")
     print(f"Multiplication Game: {storeMul}")
+    print("")
+    print("--------------------------")
     gameOption()
 
 def gameEnd():
